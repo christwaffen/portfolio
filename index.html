@@ -3,97 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maciej Oleksy | main</title>
+    <title>Portfolio | Jan Kowalski</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="main-nav">
-    <div class="container">
-        <nav>
-            <div class="logo-wrapper">
-                <img src="ujw.png" alt="Logo" class="nav-icon">
-            </div>
 
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">About me</a></li>
-                <li><a href="labs.html">My labs</a></li>
-            </ul>
-        </nav>
+    <!-- Nowe tło: Aurora Tech Gradient -->
+    <div class="blob-bg">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
     </div>
-</header>
 
-    <main class="container">
-        <section class="hero">
-            <h1>Maciej Oleksy - junior pentester</h1>
-            <p>Cybersecurity student and enthusiast focused on offensive security, with a strong interest in networks and systems and a commitment to continuous skill development.</p>
-        </section>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Jan<span>.dev</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#projects">Projekty</a></li>
+                <li><a href="#contact">Blog</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <section id="skills">
-            <h2 class="section-title">Technology Stack</h2>
-            <div class="skills-list">
-                <div class="skill-row">
-                    <div class="skill-category-name">Operatings systems</div>
-                    <div class="skill-tags-inline">
-                        <span>Linux</span>
-                        <span>Windows</span>
-                        <span>Active Directory</span>
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="status-badge"><span class="dot"></span> Dostępny do projektów</span>
+                <h1>Z podatności tworzę<span class="text-gradient"> bezpieczne systemy.</span></h1>
+                <p>Lubię rozkładać systemy na czynniki pierwsze, szukać błędów i rozumieć, jak działają mechanizmy bezpieczeństwa.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">Eksploruj projekty</a>
+                    <a href="#contact" class="btn btn-secondary">Pobierz CV</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Krótko o mnie</span>
+                <h2>Student | Web Security | Pentesting</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-text">
+                <p>Jestem pasjonatem i studentem cyberbezpieczeństwa na II roku na Uczelni Jana Wyzykowskiego w Polkowicach. Skupiam się na analizie podatności i testach penetracyjnych aplikacji webowych. Rozwijam umiejętności poprzez projekty i praktykę.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Specjalizacja (bez zmian) -->
+    <section id="areas" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Gdzie się rozwijam</span>
+                <h2>Obszary rozwoju</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="grid-3">
+                <div class="area-card">
+                    <div class="area-icon gradient-1"><i class="fas fa-rocket"></i></div>
+                    <h3>Pentesting aplikacji webowych</h3>
+                    <br>
+                    <p>Testowanie i analiza bezpieczeństwa aplikacji webowych poprzez identyfikację oraz zrozumienie podatności.</p>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon gradient-2"><i class="fas fa-brain"></i></div>
+                    <h3>Sieci komputerowe</h3>
+                    <br>
+                    <p>Zrozumienie działania sieci komputerowych, od komunikacji między urządzeniami po podstawowe mechanizmy zapewniające bezpieczeństwo transmisji danych.</p>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon gradient-3"><i class="fas fa-shield-virus"></i></div>
+                    <h3>Systemy operacyjne</h3>
+                    <br>
+                    <p>Środowisko Linux jako główne narzędzie pracy, poznawanie jego struktury, działania oraz wykorzystanie w zadaniach związanych z bezpieczeństwem i analizą systemów.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEKCJA DOŚWIADCZENIE -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Moja ścieżka</span>
+                <h2>Doświadczenie</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="experience-timeline">
+                
+                <!-- Pozycja 1 -->
+                <div class="exp-entry">
+                    <div class="exp-date">październik 2024 — obecnie</div>
+                    <div class="exp-details">
+                        <div class="exp-title">
+                            <i class="fas fa-briefcase"></i>
+                            <h3>Członek koła naukowego Infotronik</h3>
+                        </div>
+                        <span class="exp-company">Uczelnia Jana Wyżykowskiego w Polkowicach</span>
+                        <p>Aktywny udział w działalności koła naukowego, rozwijanie zainteresowań z zakresu informatyki oraz cyberbezpieczeństwa poprzez projekty i dyskusje techniczne.</p>
                     </div>
                 </div>
-                <div class="skill-row">
-                    <div class="skill-category-name">Networks</div>
-                    <div class="skill-tags-inline">
-                        <span>TCP/IP</span>
-                        <span>Wireshark</span>
-                        <span>Nmap</span>
+
+                <!-- Pozycja 2 -->
+                <div class="exp-entry">
+                    <div class="exp-date">17.05.2025</div>
+                    <div class="exp-details">
+                        <div class="exp-title">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Ogólnopolska Studencka Konferencja Naukowa</h3>
+                        </div>
+                        <span class="exp-company">Uczelnia Jana Wyżykowskiego w Polkowicach</span>
+                        <p>Wystąpienie z referatem na Ogólnopolskiej Studenckiej Konferencji Naukowej pt.: "Pokolenie Z wobec wyzwań (post)nowoczesności." prowadząc panel pt.: "Cyberbezpieczeństwo Internetu Rzeczy”, poświęconym zagrożeniom oraz wyzwaniom związanym z bezpieczeństwem urządzeń IoT.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Kompetencje techniczne</span>
+                <h2>Umiejętności</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="skills-grid-structured">
+                
+                <!-- Grupa 1: Cybersecurity -->
+                <div class="skill-column">
+                    <div class="skill-column-header">
+                        <i class="fas fa-user-shield"></i>
+                        <h4>Cybersecurity</h4>
+                    </div>
+                    <ul class="skill-list-clean">
+                        <li>Web pentesting</li>
+                        <li>Podatności OWASP Top 10</li>
+                        <li>Analiza podatności i raportowanie</li>
+                        <li>OSINT</li>
+                    </ul>
+                </div>
+
+                <!-- Grupa 2: Systemy i sieci -->
+                <div class="skill-column">
+                    <div class="skill-column-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h4>Systemy i sieci</h4>
+                    </div>
+                    <ul class="skill-list-clean">
+                        <li>Linux</li>
+                        <li>Windows Active Directory</li>
+                        <li>Sieci (TCP/IP, DNS, HTTP/S)</li>
+                        <li>Analiza ruchu sieciowego</li>
+                    </ul>
+                </div>
+
+                <!-- Grupa 3: Programowanie -->
+                <div class="skill-column">
+                    <div class="skill-column-header">
+                        <i class="fas fa-code"></i>
+                        <h4>Programowanie</h4>
+                    </div>
+                    <ul class="skill-list-clean">
+                        <li>Python (automatyzacja, skrypty)</li>
+                        <li>Bash (scripting)</li>
+                    </ul>
+                </div>
+
+                <!-- Grupa 4: Narzędzia -->
+                <div class="skill-column tools-column">
+                    <div class="skill-column-header">
+                        <i class="fas fa-tools"></i>
+                        <h4>Narzędzia</h4>
+                    </div>
+                    <div class="tools-tags-cloud">
                         <span>Burp Suite</span>
+                        <span>Nmap</span>
+                        <span>Wireshark</span>
+                        <span>Metasploit</span>
+                        <span>Git / GitHub</span>
                     </div>
                 </div>
-                <div class="skill-row">
-                    <div class="skill-category-name">Scripting</div>
-                    <div class="skill-tags-inline">
-                        <span>Python</span>
-                        <span>Bash</span>
-                        <span>PowerShell</span>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="events">
-            <h2 class="section-title">Experience and Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="timeline-date">May 2025</span>
-                    <div class="timeline-content">
-                        <h3>National Scientific Conference</h3>
-                        <p>Speaker during the panel "Individual-state-society" at the Jan Wyżykowski University in Polkowice. Topic: Cybersecurity of the Internet of Things (IoT).</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">2024 - currently</span>
-                    <div class="timeline-content">
-                        <h3>Member of the Infotronik IT club</h3>
-                        <p>Administration and content management of the <a id="link" href="https://www.infotronik.polkowski.edu.pl/"> official website </a>of the IT club at the Jan Wyżykowski University in Polkowice.</p>
-                    </div>
-                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact">
-            <h2 class="section-title">Contact me</h2>
-            <div class="contact-links">
-                <a href="mailto:maciek.oleksy.slo@gmail.com" class="contact-item">Email</a>
-                <a href="https://github.com/christwaffen" target="_blank" class="contact-item">GitHub</a>
-                <a href="tel:+48782597202" class="contact-item">Phone</a>
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Portfolio</span>
+                <h2>Moje projekty</h2>
+                <div class="divider"></div>
             </div>
-        </section>
-    </main>
+            <div class="projects-featured">
+                <div class="project-item">
+                    <div class="project-visual">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">GitHub</span>
+                        <h3>PostRecon tool</h3>
+                        <p>Narzędzie do wstepnego rekonesansu post-eksploitacyjnego.</p>
+                        <div class="project-meta"><span>Python</span></div>
+                        <a href="https://github.com/christwaffen/postrecon" class="btn-link">Zobacz szczegóły <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-visual">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">GitHub</span>
+                        <h3>Raport testu penetracyjnego</h3>
+                        <p>Raport testu penetracyjnego podatnej aplikacji webowej Altoro Mutual.</p>
+                        <div class="project-meta"><span>Penetration testing</span><span>Report</span></div>
+                        <a href="https://github.com/christwaffen/Pentest-Project-Altoro-Mutual" class="btn-link">Zobacz szczegóły <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NOWA Sekcja Kontakt: Smukła -->
+    <!-- ZMODYFIKOWANA SEKCJA KONTAKT Z MEDIA MI -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-slim-enhanced">
+                <div class="contact-info-block">
+                    <p>Szukasz studenta z pasją do cyberbezpieczeństwa? Porozmawiajmy.</p>
+                </div>
+
+                <div class="contact-socials">
+                    <a href="https://linkedin.com/in/twojprofil" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/twojnick" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:twoj@email.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://tryhackme.com/p/twojnick" target="_blank" title="TryHackMe">
+                        <i class="fas fa-terminal"></i>
+                    </a>
+                </div>
+
+                <div class="contact-cta">
+                    <a href="kontakt.html" class="btn-contact-white">
+                        Pełny formularz <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Maciej Oleksy</p>
+        <p>&copy; 2024 Design & Code by Jan Kowalski</p>
     </footer>
+
 </body>
 </html>
