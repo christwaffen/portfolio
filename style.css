@@ -60,11 +60,22 @@ nav {
 .hero p { font-size: 1.15rem; color: var(--text-light); margin-bottom: 2rem; max-width: 550px; }
 
 /* --- BUTTONS --- */
+.hero-btns { 
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 15px; /* To załatwia odstęp między przyciskami */
+}
+
 .btn { padding: 12px 28px; border-radius: 10px; font-weight: 700; text-decoration: none; transition: 0.3s; display: inline-block; font-size: 0.9rem; }
 .btn-primary { background: var(--primary); color: white; box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2); border: none; }
 .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 15px 25px rgba(79, 70, 229, 0.3); }
-.btn-secondary { background: #f8fafc; color: var(--text-main); margin-left: 10px; border: 1px solid #e2e8f0; }
 
+.btn-secondary { 
+    background: #f8fafc; 
+    color: var(--text-main); 
+    /* Usuwamy margin-left: 10px; bo teraz używamy gap w .hero-btns */
+    border: 1px solid #e2e8f0; 
+}
 /* --- SEKCE --- */
 .container { max-width: 1100px; margin: 0 auto; padding: 0 40px; }
 .section { padding: 60px 0; }
@@ -390,4 +401,71 @@ nav {
 .exp-entry:hover .exp-title h3 {
     color: var(--primary);
     transition: 0.3s;
+}
+/* --- POPRAWKI RESPONSYWNOŚCI --- */
+
+@media (max-width: 768px) {
+    /* Nawigacja na mobile */
+    .nav-container {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        height: auto;
+        padding: 120px 0 60px;
+        text-align: center;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-btns {
+        justify-content: center;
+    }
+
+    /* Projekty na mobile - układ jeden pod drugim */
+    .project-item, .project-item.reverse {
+        grid-template-columns: 1fr; /* Jedna kolumna */
+        gap: 25px;
+    }
+
+    .project-info {
+        order: 2; /* Tekst pod obrazkiem */
+    }
+
+    .project-visual {
+        order: 1; /* Obrazek na górze */
+    }
+}
+/* --- STOPKA --- */
+footer {
+    padding: 60px 0 30px;
+    margin-top: 50px;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+}
+
+footer p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+footer .footer-bottom {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+footer .footer-bottom span {
+    color: var(--primary);
 }
